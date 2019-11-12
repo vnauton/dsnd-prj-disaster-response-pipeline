@@ -1,0 +1,163 @@
+root@0ab401aa87b8:/home/workspace# python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package wordnet to /root/nltk_data...
+[nltk_data]   Package wordnet is already up-to-date!
+[nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+Loading data...
+    DATABASE: data/DisasterResponse.db
+Building model...
+Training model...
+Fitting 3 folds for each of 4 candidates, totalling 12 fits
+[CV] clf__estimator__learning_rate=0.1, clf__estimator__n_estimators=100 
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1137: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+[CV]  clf__estimator__learning_rate=0.1, clf__estimator__n_estimators=100, score=0.6069775940135376, total= 4.0min
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:  5.2min remaining:    0.0s
+[CV] clf__estimator__learning_rate=0.1, clf__estimator__n_estimators=100 
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1137: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+[CV]  clf__estimator__learning_rate=0.1, clf__estimator__n_estimators=100, score=0.6022382060486471, total= 3.9min
+[Parallel(n_jobs=1)]: Done   2 out of   2 | elapsed: 10.2min remaining:    0.0s
+[CV] clf__estimator__learning_rate=0.1, clf__estimator__n_estimators=100 
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1137: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+[CV]  clf__estimator__learning_rate=0.1, clf__estimator__n_estimators=100, score=0.6096359775684335, total= 3.9min
+[CV] clf__estimator__learning_rate=0.1, clf__estimator__n_estimators=200 
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1137: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+[CV]  clf__estimator__learning_rate=0.1, clf__estimator__n_estimators=200, score=0.6248907476375863, total= 6.4min
+[CV] clf__estimator__learning_rate=0.1, clf__estimator__n_estimators=200 
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1137: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+[CV]  clf__estimator__learning_rate=0.1, clf__estimator__n_estimators=200, score=0.6214815783172154, total= 6.3min
+[CV] clf__estimator__learning_rate=0.1, clf__estimator__n_estimators=200 
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1137: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+[CV]  clf__estimator__learning_rate=0.1, clf__estimator__n_estimators=200, score=0.6227419877596929, total= 6.3min
+[CV] clf__estimator__learning_rate=0.3, clf__estimator__n_estimators=100 
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1137: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+[CV]  clf__estimator__learning_rate=0.3, clf__estimator__n_estimators=100, score=0.6297645161055084, total= 3.9min
+[CV] clf__estimator__learning_rate=0.3, clf__estimator__n_estimators=100 
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1137: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+[CV]  clf__estimator__learning_rate=0.3, clf__estimator__n_estimators=100, score=0.6266112093464812, total= 3.9min
+[CV] clf__estimator__learning_rate=0.3, clf__estimator__n_estimators=100 
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1137: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+[CV]  clf__estimator__learning_rate=0.3, clf__estimator__n_estimators=100, score=0.6295459799399448, total= 3.9min
+[CV] clf__estimator__learning_rate=0.3, clf__estimator__n_estimators=200 
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1137: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+[CV]  clf__estimator__learning_rate=0.3, clf__estimator__n_estimators=200, score=0.6359954496065148, total= 6.4min
+[CV] clf__estimator__learning_rate=0.3, clf__estimator__n_estimators=200 
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1137: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+[CV]  clf__estimator__learning_rate=0.3, clf__estimator__n_estimators=200, score=0.6317509114348359, total= 6.3min
+[CV] clf__estimator__learning_rate=0.3, clf__estimator__n_estimators=200 
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1137: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+[CV]  clf__estimator__learning_rate=0.3, clf__estimator__n_estimators=200, score=0.6384601171340017, total= 6.3min
+[Parallel(n_jobs=1)]: Done  12 out of  12 | elapsed: 76.2min finished
+Evaluating model...
+related
+          Accuracy: 0.7189              % Precision: 0.8287           % Recall: 0.7189              % F1_score: 0.7425
+request
+          Accuracy: 0.8468              % Precision: 0.8717           % Recall: 0.8468              % F1_score: 0.8556
+offer
+          Accuracy: 0.9550              % Precision: 0.9947           % Recall: 0.9550              % F1_score: 0.9738
+aid_related
+          Accuracy: 0.7698              % Precision: 0.7685           % Recall: 0.7698              % F1_score: 0.7687
+medical_help
+          Accuracy: 0.8863              % Precision: 0.9235           % Recall: 0.8863              % F1_score: 0.9005
+medical_products
+          Accuracy: 0.8924              % Precision: 0.9421           % Recall: 0.8924              % F1_score: 0.9124
+search_and_rescue
+          Accuracy: 0.8497              % Precision: 0.9638           % Recall: 0.8497              % F1_score: 0.8977
+security
+          Accuracy: 0.8423              % Precision: 0.9677           % Recall: 0.8423              % F1_score: 0.8982
+military
+          Accuracy: 0.9514              % Precision: 0.9683           % Recall: 0.9514              % F1_score: 0.9580
+child_alone
+          Accuracy: 1.0000              % Precision: 1.0000           % Recall: 1.0000              % F1_score: 1.0000
+water
+          Accuracy: 0.9432              % Precision: 0.9615           % Recall: 0.9432              % F1_score: 0.9492
+food
+          Accuracy: 0.9508              % Precision: 0.9551           % Recall: 0.9508              % F1_score: 0.9524
+shelter
+          Accuracy: 0.9235              % Precision: 0.9419           % Recall: 0.9235              % F1_score: 0.9301
+clothing
+          Accuracy: 0.9727              % Precision: 0.9818           % Recall: 0.9727              % F1_score: 0.9765
+money
+          Accuracy: 0.9447              % Precision: 0.9769           % Recall: 0.9447              % F1_score: 0.9578
+missing_people
+          Accuracy: 0.9285              % Precision: 0.9817           % Recall: 0.9285              % F1_score: 0.9526
+refugees
+          Accuracy: 0.9109              % Precision: 0.9625           % Recall: 0.9109              % F1_score: 0.9317
+death
+          Accuracy: 0.9483              % Precision: 0.9639           % Recall: 0.9483              % F1_score: 0.9541
+other_aid
+          Accuracy: 0.7635              % Precision: 0.8468           % Recall: 0.7635              % F1_score: 0.7937
+infrastructure_related
+          Accuracy: 0.7908              % Precision: 0.9095           % Recall: 0.7908              % F1_score: 0.8360
+transport
+          Accuracy: 0.8600              % Precision: 0.9357           % Recall: 0.8600              % F1_score: 0.8914
+buildings
+          Accuracy: 0.9189              % Precision: 0.9533           % Recall: 0.9189              % F1_score: 0.9319
+electricity
+          Accuracy: 0.9596              % Precision: 0.9771           % Recall: 0.9596              % F1_score: 0.9666
+tools
+          Accuracy: 0.9426              % Precision: 0.9911           % Recall: 0.9426              % F1_score: 0.9658
+hospitals
+          Accuracy: 0.9411              % Precision: 0.9854           % Recall: 0.9411              % F1_score: 0.9608
+shops
+          Accuracy: 0.9590              % Precision: 0.9924           % Recall: 0.9590              % F1_score: 0.9749
+aid_centers
+          Accuracy: 0.9229              % Precision: 0.9813           % Recall: 0.9229              % F1_score: 0.9495
+other_infrastructure
+          Accuracy: 0.7828              % Precision: 0.9324           % Recall: 0.7828              % F1_score: 0.8417
+weather_related
+          Accuracy: 0.8829              % Precision: 0.8811           % Recall: 0.8829              % F1_score: 0.8816
+floods
+          Accuracy: 0.9405              % Precision: 0.9444           % Recall: 0.9405              % F1_score: 0.9422
+storm
+          Accuracy: 0.9397              % Precision: 0.9507           % Recall: 0.9397              % F1_score: 0.9435
+fire
+          Accuracy: 0.9662              % Precision: 0.9854           % Recall: 0.9662              % F1_score: 0.9749
+earthquake
+          Accuracy: 0.9668              % Precision: 0.9673           % Recall: 0.9668              % F1_score: 0.9670
+cold
+          Accuracy: 0.9674              % Precision: 0.9789           % Recall: 0.9674              % F1_score: 0.9720
+other_weather
+          Accuracy: 0.8579              % Precision: 0.9326           % Recall: 0.8579              % F1_score: 0.8877
+direct_report
+          Accuracy: 0.7997              % Precision: 0.8375           % Recall: 0.7997              % F1_score: 0.8127
+Saving model...
+    MODEL: models/classifier.pkl
+Trained model saved!
