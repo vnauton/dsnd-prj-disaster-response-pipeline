@@ -15,8 +15,9 @@ This project will include a web app where an emergency worker can input a new me
 
 Below are a few screenshots of the web app.
 
-<img src="assets/disaster-response-project1.png" width="80%" alt="disaster response project web app">
-<img src="assets/disaster-response-project2.png" width="80%" alt="disaster response project web app">
+<img src="assets/disaster-response-project2.png" width="60%" alt="disaster response project web app">
+<img src="assets/category_msgs_rank.png" 		 width="60%" alt="disaster response project web app">
+<img src="assets/disaster_count_words.png" 		 width="60%" alt="disaster response project web app">
 
 ## Files
 
@@ -34,6 +35,7 @@ Below are a few screenshots of the web app.
   - Trains and tunes a model using GridSearchCV
   - Outputs results on the test set
   - Exports the final model as a pickle file
+  - Save as pickle file disaster vocabulary names and category stats based on datas and category names
 
 ## Acknowledgements
 
