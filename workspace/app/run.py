@@ -9,6 +9,7 @@ from flask import Flask
 from flask import render_template, request, jsonify
 from plotly.graph_objs import Bar
 from sklearn.externals import joblib
+from sklearn.feature_extraction.text import CountVectorizer
 from sqlalchemy import create_engine
 
 
@@ -28,6 +29,12 @@ def tokenize(text):
 # load data
 engine = create_engine('sqlite:///../data/DisasterResponse.db')
 df = pd.read_sql_table('CleanedDataTable', engine)
+
+# load vocabulary stats
+vocabulary_counts, vocabulary_words = joblib.load("../models/vocabulary_stats.pkl")
+
+# load category stats
+category_counts, category_names = joblib.load("../models/category_stats.pkl")
 
 # load model
 model = joblib.load("../models/classifier.pkl")
@@ -61,6 +68,41 @@ def index():
                 },
                 'xaxis': {
                     'title': "Genre"
+                }
+            }
+        },
+		{
+            'data': [
+                Bar(
+                    x=list(vocabulary_words),
+                    y=list(vocabulary_counts)
+                )
+            ],
+
+            'layout': {
+                'title': 'The 30 words that are random sampled from vocabulary',
+                'yaxis': {
+                    'title': "Counts"
+                },
+                'xaxis': {
+                    'title': "Words"
+                }
+            }
+        },
+        {
+            'data': [
+                Bar(
+                    x=list(category_names),
+                    y=list(category_counts)
+                )
+            ],
+            'layout': {
+                'title': 'The 36 categories that must be classified',
+                'yaxis': {
+                    'title': "A number of messages"
+                },
+                'xaxis': {
+                    'title': "Categories"
                 }
             }
         }
