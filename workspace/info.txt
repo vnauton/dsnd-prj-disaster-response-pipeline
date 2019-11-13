@@ -13,5 +13,7 @@
 - models
 |- train_classifier.py
 |- classifier.pkl  # saved model 
+|- vocabulary_stats.pkl  # Vocaburary stats 
+|- category_stats.pkl  # category stats
 
 - README.md
